@@ -18,9 +18,11 @@ addons:
 install:
   - yarn install
 
-script:
+before_script:
   - ng lint --format stylish
   - ng test --watch false --single-run true --browsers ChromeHeadless
+
+script:
   - ng build --prod
 
 deploy:
