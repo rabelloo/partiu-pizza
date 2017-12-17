@@ -1,0 +1,29 @@
+@import '~@angular/material/theming';
+@import 'variables';
+
+:host {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100vh;
+    overflow: hidden;
+
+    piz-nav-bar {
+        transition: {
+            duration: $mat-elevation-transition-duration;
+            property: box-shadow;
+            timing-function: $mat-elevation-transition-timing-function;
+        }
+        z-index: 1;
+    }
+
+    main {
+        flex: 1 0 auto;
+        max-height: calc(100vh - #{$toolbar-height-desktop});
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        @media #{$mat-xsmall} {
+            max-height: calc(100vh - #{$toolbar-height-mobile-portrait});
+        }
+    }
+}

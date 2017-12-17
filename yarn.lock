@@ -33,6 +33,12 @@
   dependencies:
     tslib "^1.7.1"
 
+"@angular/cdk@^5.0.1":
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/@angular/cdk/-/cdk-5.0.1.tgz#c85e662fe2e1c58abde1dea0f0f18cdfcffc2066"
+  dependencies:
+    tslib "^1.7.1"
+
 "@angular/cli@^1.6.1":
   version "1.6.1"
   resolved "https://registry.yarnpkg.com/@angular/cli/-/cli-1.6.1.tgz#6797995be1965bfc2e26234c728c9968cf7f3bdb"
@@ -124,6 +130,12 @@
   dependencies:
     tslib "^1.7.1"
 
+"@angular/flex-layout@^2.0.0-beta.12":
+  version "2.0.0-beta.12"
+  resolved "https://registry.yarnpkg.com/@angular/flex-layout/-/flex-layout-2.0.0-beta.12.tgz#80970dc1d60f27fa41537659926f3238f759f343"
+  dependencies:
+    tslib "^1.7.1"
+
 "@angular/forms@^5.0.0":
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-5.1.1.tgz#e38858a44e7b57b61f375087b76a79d6e2679b14"
@@ -139,6 +151,12 @@
 "@angular/language-service@^5.0.0":
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/@angular/language-service/-/language-service-5.1.1.tgz#731533a3b6ee4c8facda862a836db1930a011f07"
+
+"@angular/material@^5.0.1":
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/@angular/material/-/material-5.0.1.tgz#73ff8af76daf7c7ec56092a613637b21deb5d00e"
+  dependencies:
+    tslib "^1.7.1"
 
 "@angular/platform-browser-dynamic@^5.0.0":
   version "5.1.1"

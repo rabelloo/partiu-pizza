@@ -1,3 +1,7 @@
-<h1>Pizza-iolos</h1>
+<piz-nav-bar [class.mat-elevation-z4]="scrolled"></piz-nav-bar>
 
-<router-outlet></router-outlet>
+<main (scroll)="onScroll($event)">
+    <router-outlet></router-outlet>
+
+    <piz-footer></piz-footer>
+</main>

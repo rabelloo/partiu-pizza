@@ -1,0 +1,56 @@
+﻿@import '~@angular/material/theming';
+
+
+/**************************************************
+*   Typography
+*/
+$font-size: 16px;
+
+
+/**************************************************
+*   Layout
+*/
+$gutter-small: 16px;
+$gutter-large: 24px;
+
+$breakpoint-1: 600px;
+$breakpoint-2: 1600px;
+
+$window-xsmall: 0;
+$window-small: 480px;
+$window-medium: 960px;
+$window-large: 1280px;
+$window-xlarge: 1920px;
+
+$handset-portrait-small: 0;
+$handset-portrait-medium: 360px;
+$handset-portrait-large: 400px;
+
+$handset-landscape-small: 480px;
+$handset-landscape-medium: 600px;
+$handset-landscape-large: 720px;
+
+$tablet-portrait-small: 600px;
+$tablet-portrait-large: 720px;
+
+$tablet-landscape-small: 960px;
+$tablet-landscape-large: 1024px;
+
+
+/**************************************************
+*   Toolbar
+*/
+$toolbar-height-desktop: 64px;
+$toolbar-height-mobile-portrait: 56px;
+
+
+/**************************************************
+*   Color
+*/
+@mixin bg-color($color, $hue: 500) {
+    background-color: mat-color($color, $hue);
+    color: mat-contrast($color, $hue);
+}
+@mixin color($color, $hue: 500) {
+    color: mat-color($color, $hue);
+}

@@ -1,0 +1,31 @@
+﻿@import '~@angular/material/theming';
+@import '../variables';
+
+
+@mixin mediaContain($width) {
+  @media (min-width: #{$width}) {
+    @if ($width < $breakpoint-1) {
+      max-width: $width - $gutter-small;
+    }
+    @else if ($width < $breakpoint-2 + $gutter-large) {
+      max-width: $width * .75;
+    }
+    @else {
+      max-width: $breakpoint-2;
+    }
+  }
+}
+
+
+.piz-container {
+  margin: 0 auto;
+  width: 100%;
+
+  @include mediaContain($handset-portrait-medium); // 360
+  @include mediaContain($window-small);            // 480
+  @include mediaContain($breakpoint-1);            // 600
+  @include mediaContain($handset-landscape-large); // 720
+  @include mediaContain($window-medium);           // 960
+  @include mediaContain($window-large);            // 1280
+  @include mediaContain($breakpoint-2);            // 1600
+}

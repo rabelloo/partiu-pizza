@@ -1,0 +1,7 @@
+@import '~@angular/material/theming';
+@import '../variables';
+
+:host {
+    @include bg-color($mat-indigo);
+    padding: 5rem 2.5rem;
+}

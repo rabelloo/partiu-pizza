@@ -1,0 +1,30 @@
+@import '~@angular/material/theming';
+
+mat-toolbar {
+    display: flex;
+    align-items: stretch;
+    padding: 0 2.5rem;
+
+    a[routerLink] {
+        display: flex;
+        align-items: center;
+        
+        piz-logo {
+            font-size: 1.5rem;
+        }
+
+        ::ng-deep .mat-button-focus-overlay {
+            transition: {
+                duration: $mat-elevation-transition-duration;
+                property: background-color, opacity;
+                timing-function: $ease-in-out-curve-function;
+            }
+        }
+    }
+
+    .mat-button {
+        border-radius: 0;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+}
