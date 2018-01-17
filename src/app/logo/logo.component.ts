@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'piz-logo',
+  selector: 'pp-logo',
   templateUrl: './logo.component.html',
   styleUrls: ['./logo.component.scss']
 })

@@ -1,0 +1,43 @@
+@import '~@angular/material/theming';
+
+:host {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    > div,
+    > p {
+        width: 50%;
+    }
+
+    p {
+        background-color: white;
+        position: relative;
+        padding: 2.5rem;
+        justify-self: flex-end;
+        @include mat-elevation(2);
+        @include mat-elevation-transition;
+
+        &:hover {
+            @include mat-elevation(6);
+        }
+    }
+
+    img {
+        position: absolute;
+        top: -5rem;
+        left: -8rem;
+        height: 123%;
+        width: auto;
+
+        + div {
+            background-color: #eee;
+            position: absolute;
+            height: 115%;
+            width: 14%;
+            left: 54%;
+            top: -4rem;
+            transform: rotateZ(-19deg);
+        }
+    }
+}

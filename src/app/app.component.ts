@@ -1,7 +1,7 @@
 import { Component, ChangeDetectionStrategy, HostListener } from '@angular/core';
 
 @Component({
-  selector: 'piz-root',
+  selector: 'pp-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,

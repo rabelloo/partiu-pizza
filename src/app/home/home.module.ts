@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
+import { ContainerModule } from '../container/container.module';
+import { DescriptionModule } from '../description/description.module';
 import { HoverStretchModule } from '../hover-stretch/hover-stretch.module';
 import { SectionModule } from '../section/section.module';
 
@@ -12,7 +13,8 @@ const components = [
 
 @NgModule({
   imports: [
-    CommonModule,
+    ContainerModule,
+    DescriptionModule,
     HoverStretchModule,
     SectionModule,
   ],

@@ -1,11 +1,11 @@
 import { Directive, HostBinding } from '@angular/core';
 
 @Directive({
-  selector: '[pizContainer]'
+  selector: '[ppContainer]'
 })
 export class ContainerDirective {
 
-  @HostBinding('class.piz-container')
+  @HostBinding('class.pp-container')
   private class = true;
 
 }

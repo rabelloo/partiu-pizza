@@ -1,1 +1,10 @@
+pp-section {
+    position: relative;
+    overflow: hidden;
 
+    img {
+        display: none;
+        height: 100%;
+        width: auto;
+    }
+}

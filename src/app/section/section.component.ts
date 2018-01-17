@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'piz-section',
+  selector: 'pp-section',
   templateUrl: './section.component.html',
   styleUrls: ['./section.component.scss']
 })

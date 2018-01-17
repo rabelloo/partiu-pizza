@@ -1,7 +1,15 @@
-<piz-section *ngFor="let color of ['#eee', '#ddd', '#ccc']"
-             [style.background-color]="color"
->
-  <a pizHoverStretch>
-    Mouse aqui!
-  </a>
-</piz-section>
+<pp-section [style.background-color]="'#eee'">
+  <pp-description ppContainer></pp-description>
+</pp-section>
+<pp-section [style.background-color]="'#ddd'">
+  <p>
+    Texto
+  </p>
+  <img src="assets/especial.jpg" />
+</pp-section>
+<pp-section [style.background-color]="'#ccc'">
+  <img src="assets/palmito-calabresa.jpg" />
+  <p>
+    Texto
+  </p>
+</pp-section>
