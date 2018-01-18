@@ -121,13 +121,13 @@
     "directive-selector": [
       true,
       "attribute",
-      "piz",
+      "pp",
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
-      "piz",
+      "pp",
       "kebab-case"
     ],
     "no-output-on-prefix": true,
