@@ -1,5 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { DescriptionModule } from '../description/description.module';
 import { SectionModule } from '../section/section.module';
 
 import { HomeComponent } from './home.component';
@@ -12,6 +13,7 @@ describe('HomeComponent', () => {
     TestBed.configureTestingModule({
       declarations: [ HomeComponent ],
       imports: [
+        DescriptionModule,
         SectionModule,
       ]
     });
