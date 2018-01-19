@@ -1,6 +1,13 @@
 ﻿@import 'material';
 @import 'app/variables';
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: Roboto, 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-size: $font-size;

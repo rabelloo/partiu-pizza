@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 
-import { ContainerModule } from '../container/container.module';
 import { DescriptionModule } from '../description/description.module';
 import { HoverStretchModule } from '../hover-stretch/hover-stretch.module';
 import { SectionModule } from '../section/section.module';
@@ -13,7 +12,6 @@ const components = [
 
 @NgModule({
   imports: [
-    ContainerModule,
     DescriptionModule,
     HoverStretchModule,
     SectionModule,

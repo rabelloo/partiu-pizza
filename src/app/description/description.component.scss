@@ -1,43 +1,74 @@
 @import '~@angular/material/theming';
+@import '../variables';
 
 :host {
+    $bg-color: #eee;
+    
+    background-color: $bg-color;
     display: flex;
-    align-items: center;
-    height: 100%;
+    flex-direction: column;
 
-    > div,
-    > p {
-        width: 50%;
-    }
-
-    p {
-        background-color: white;
+    .img-container {
+        overflow: hidden;
         position: relative;
-        padding: 2.5rem;
-        justify-self: flex-end;
-        @include mat-elevation(2);
-        @include mat-elevation-transition;
 
-        &:hover {
-            @include mat-elevation(6);
+        img {
+            height: auto;
+            width: 100%;
+            transform: scale(1.3);
+            margin: {
+                top: -1rem;
+                left: -1rem;
+            }
         }
     }
 
-    img {
-        position: absolute;
-        top: -5rem;
-        left: -8rem;
-        height: 123%;
-        width: auto;
+    .text-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
 
-        + div {
-            background-color: #eee;
+        .background {
+            background-color: $bg-color;
             position: absolute;
-            height: 115%;
-            width: 14%;
-            left: 54%;
-            top: -4rem;
-            transform: rotateZ(-19deg);
+            margin-top: -3%;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            transform: skewY(3deg);
+            transform-origin: bottom;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            padding: 1rem;
+            position: relative;
+        }
+    }
+        
+    @media (min-width: #{$breakpoint-1}) {
+        flex-direction: row;
+
+        .img-container {
+            flex: 1 0 auto;
+            height: 100%;
+            width: 50%;
+        }
+
+        .text-container {
+            .background {
+                transform: skewX(11deg);
+            }
+        }
+    }
+
+    @media (min-width: #{$window-medium}) {
+        .text-container {
+            p {
+                padding: 2.5rem;
+            }
         }
     }
 }

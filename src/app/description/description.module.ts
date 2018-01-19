@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 
+import { ContainerModule } from '../container/container.module';
+
 import { DescriptionComponent } from './description.component';
 
 const components = [
@@ -7,6 +9,9 @@ const components = [
 ];
 
 @NgModule({
+  imports: [
+    ContainerModule,
+  ],
   declarations: components,
   exports: components,
 })
