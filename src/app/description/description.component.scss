@@ -1,4 +1,3 @@
-@import '~@angular/material/theming';
 @import '../variables';
 
 :host {
@@ -8,19 +7,15 @@
     display: flex;
     flex-direction: column;
 
-    .img-container {
-        overflow: hidden;
-        position: relative;
-
-        img {
-            height: auto;
-            width: 100%;
-            transform: scale(1.3);
-            margin: {
-                top: -1rem;
-                left: -1rem;
-            }
+    .img {
+        background: {
+            image: url('/assets/portuguesa.jpg');
+            repeat: no-repeat;
+            position: 70% 70%;
+            size: 130%;
         }
+        flex: 1 0 auto;
+        height: 67vw;
     }
 
     .text-container {
@@ -41,19 +36,33 @@
             transform-origin: bottom;
         }
 
-        p {
+        .pp-container {
             margin-bottom: 1rem;
             padding: 1rem;
             position: relative;
+
+            h1 {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    @media (min-width: #{$tablet-portrait-large}) {
+        .text-container {
+            .pp-container {
+                h1 {
+                    margin-left: -3rem;
+                }
+            }
         }
     }
         
-    @media (min-width: #{$breakpoint-1}) {
+    @media (min-width: #{$window-medium}) {
         flex-direction: row;
 
-        .img-container {
+        .img {
             flex: 1 0 auto;
-            height: 100%;
+            height: 33vw;
             width: 50%;
         }
 
@@ -61,12 +70,8 @@
             .background {
                 transform: skewX(11deg);
             }
-        }
-    }
 
-    @media (min-width: #{$window-medium}) {
-        .text-container {
-            p {
+            .pp-container {
                 padding: 2.5rem;
             }
         }
