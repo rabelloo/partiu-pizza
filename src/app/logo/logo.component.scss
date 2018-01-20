@@ -1,0 +1,11 @@
+@import '../variables.scss';
+
+:host {
+    font: {
+        family: Lobster Two;
+        style: italic;
+        size: 1.5rem;
+    }
+    position: relative;
+    text-shadow: -1px 1px 0 black;
+}

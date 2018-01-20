@@ -2,14 +2,31 @@
 
 @include mat-core();
 
-
+/* COLOR THEME */
 $clue-primary: mat-palette($mat-blue);
 $clue-accent: mat-palette($mat-deep-orange, 500, A100, A400);
 
 $clue-warn: mat-palette($mat-red);
 
-
 $clue-theme: mat-light-theme($clue-primary, $clue-accent, $clue-warn);
 
-
 @include angular-material-theme($clue-theme);
+
+
+/* TYPOGRAPHY */
+$lobster: '"Lobster Two", "Helvetica Neue", sans-serif';
+$openSans: '"Open Sans", "Helvetica Neue", sans-serif';
+
+$custom-typography: mat-typography-config(
+  $font-family:   $openSans,
+  $display-4:     mat-typography-level(112px, 112px, 300, $lobster),
+  $display-3:     mat-typography-level(56px, 56px, 400, $lobster),
+  $display-2:     mat-typography-level(45px, 48px, 400, $lobster),
+  $display-1:     mat-typography-level(34px, 40px, 400, $lobster),
+  $headline:      mat-typography-level(24px, 32px, 400, $lobster),
+  $title:         mat-typography-level(20px, 32px, 500, $lobster),
+  $subheading-2:  mat-typography-level(16px, 28px, 400, $lobster),
+  $subheading-1:  mat-typography-level(15px, 24px, 400, $lobster)
+);
+
+@include mat-base-typography($custom-typography);

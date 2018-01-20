@@ -1,16 +1,19 @@
-@import '~@angular/material/theming';
+@import '../variables.scss';
 
 mat-toolbar {
     display: flex;
     align-items: stretch;
     padding: 0 2.5rem;
+    @include bg-color($mat-grey, 200);
 
     a[routerLink] {
         display: flex;
         align-items: center;
+        text-decoration: none;
         
         pp-logo {
-            font-size: 1.5rem;
+            @include color($mat-red, A700);
+            font-size: 2.5rem;
         }
 
         ::ng-deep .mat-button-focus-overlay {
